@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rgb(78, 78, 78);
+}
+span {
+  color: rgba(251, 179, 63, 1);
+}
+header {
+  height: 5vh;
+}
+footer {
+  height: 5vh;
+}
+body {
+  background: radial-gradient(
+    circle,
+    rgba(249, 234, 234, 1) 6%,
+    rgba(251, 179, 63, 1) 100%
+  );
+}
+section {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.display {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 10px 10px 5px 5px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  text-align: right;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  font-size: 30px;
+  position: relative;
+}
+
+.display-history {
+  opacity: 0.4;
+  font-size: 25px;
+}
+
+.display-temp {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  font-size: 25px;
+  opacity: 0.4;
+}
+
+.all-btn {
+  color: black;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.btn-zero {
+  grid-column: 1/3;
+}
+
+.button {
+  border: 0.5px solid rgba(254, 254, 254, 0.662);
+  border-radius: 5px;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(255, 140, 0, 0.64);
+}
+
+.btn-operation,
+.btn-clr-all,
+.btn-last-entity-clr,
+.btn-equal {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  /* border-radius: 20px; */
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.mark {
+  inset: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
